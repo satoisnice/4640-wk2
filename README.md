@@ -5,10 +5,10 @@
 + Connor
 
 ![alt text](keygen.png)
-This is Key generation processes
+This is the comand used to generate our ssh Key
 
 ![alt text](nginx.png)
-Here we first line is the chbang so we are able to use bash script language.<br> Second line is refrencing the creds file that contains th eusername & ip of the AWS vm machine. <br>
+Here we first line is the shebang so we are able to use bash script language.<br> Second line is refrencing the creds file that contains th eusername & ip of the AWS vm machine. <br>
 ```bash
 ssh -i $SSH_key_path $username@$ip << EOF
 ```
