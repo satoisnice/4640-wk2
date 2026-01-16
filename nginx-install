@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source creds
+ssh -i $SSH_key_path $username@$ip << EOF
+sudo apt install -y nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+EOF

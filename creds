@@ -1,0 +1,4 @@
+export username="admin"
+export ip="34.222.14.43"
+export SSH_key_path=/home/sato/Documents/term4/System_Network_Provisioning/lab-wk-2/wkone
+

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+date=$(date +"%d/%m/%Y")
+html_path="/var/www/html/index.html"
+
+source creds
+ssh -i $SSH_key_path -T $username@$ip << EOF
+sudo touch $html_path
+sudo tee $html_path << LAB 
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Hello World</title>
+</head>
+<body>
+  <h1>Hello World!</h1>
+  <p>Today's date is: $(date)</p>
+</body>
+</html>
+LAB
+sudo systemctl reload nginx
+EOF
