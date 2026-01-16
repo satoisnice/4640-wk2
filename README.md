@@ -1,5 +1,5 @@
 ### LAB 2
-### MEMEBERS
+### MEMBERS
 + Omar
 + Kevin
 + Connor
